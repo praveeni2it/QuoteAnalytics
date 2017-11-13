@@ -1,0 +1,30 @@
+{
+  "name": "CustomerVarianceAnalytics",
+  "plural": "CustomerVarianceAnalytics",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "customerVariance": {
+      "type": "any",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customerId": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    },
+    "productId": {
+      "type": "belongsTo",
+      "model": "Product",
+      "foreignKey": "productId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

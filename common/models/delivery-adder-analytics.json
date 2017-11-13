@@ -1,0 +1,23 @@
+{
+  "name": "DeliveryAdderAnalytics",
+  "plural": "DeliveryAdderAnalytics",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "deliveryYear": {
+      "type": "string",
+      "required": true
+    },
+    "deliveryAdder": {
+      "type": "any",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
