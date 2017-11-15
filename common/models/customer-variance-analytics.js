@@ -1,14 +1,6 @@
 "use strict";
 
 module.exports = function(CustomerVarianceAnalytics) {
-  CustomerVarianceAnalytics.remoteMethod(
-    "getCustomerVariance", {
-      http: { path: "/getVariance", verb: "post" },
-      accepts: { arg: "reqParams", type: "object", http: {source: "body"} },
-      returns: { arg: "customerVariance", type: "object" }
-    }
-  );
-
   CustomerVarianceAnalytics.getCustomerVariance = function (reqParams, getVarianceCB) {
     CustomerVarianceAnalytics.findOne({where: {
       customerId: reqParams.customerId,

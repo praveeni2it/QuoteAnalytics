@@ -46,14 +46,14 @@
   },
   "DeliveryAdderAnalytics": {
     "dataSource": "mysqlDs",
-    "public": true
+    "public": false
   },
   "CustomerAdderAnalytics": {
     "dataSource": "mysqlDs",
-    "public": true
+    "public": false
   },
   "CustomerVarianceAnalytics": {
     "dataSource": "mysqlDs",
-    "public": true
+    "public": false
   }
 }
